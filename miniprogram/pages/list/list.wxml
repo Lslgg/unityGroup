@@ -1,0 +1,6 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+	<view class="list">
+		<text>{{motto}}</text>
+	</view>
+</view>

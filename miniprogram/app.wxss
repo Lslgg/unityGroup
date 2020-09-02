@@ -1,0 +1,154 @@
+/**app.wxss**/
+@import "./assets/css/icon/font-awesome.wxss";
+@import "./assets/css/icon/stylesheet.wxss";
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.red{
+  color: red;
+}
+
+.tags .tag-item{
+  background: #f8f8f8;
+  padding:3rpx 12rpx;
+  padding-left:0;
+  border-radius: 4rpx;
+  margin-right: 8rpx;
+  font-size: 24rpx;
+}
+
+.tags .tag-item-active{
+  background: #ffc0cb54;
+  color: red;
+}
+
+.more {
+  text-align: center;
+  line-height: 44px;
+  color: red;
+  font-size: 18px;
+  background: #f8f8f8;
+}
+
+.line{
+  border-bottom: solid 1px #eee;
+  margin-bottom: 24rpx;
+  margin-top: 24rpx;
+}
+
+.imgBg{
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+}
+
+.imgBg image{
+  margin: auto;
+}
+
+.div-row{
+  padding: 0 28rpx;
+}
+
+.div-row .title {
+  margin: 28rpx 0;
+  font-weight: blod;
+  font-size: 34rpx;
+}
+
+.div-list .div-list-item{
+  margin-bottom: 32rpx;
+  font-size: 30rpx;
+}
+
+.div-row .div-list .div-list-item{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.div-row .div-list .div-list-item view{
+  flex: 0 0 48%;
+} 
+
+.div-row .div-list .div-list-item .imgBg{
+    width:340rpx;
+    height:220rpx;
+}
+
+.div-row .div-list .div-list-item .imgBg image{
+  max-width: 340rpx;
+  max-height: 220rpx;
+  border-radius: 4rpx;
+}
+
+.div-row .div-list .right view{
+  margin-bottom: 18rpx;
+}
+
+.div-row .div-list .div-title{
+  font-size:32rpx;
+  font-weight: bold;
+}
+
+.div-list .div-list-item .div-sub-title{
+  font-size:28rpx ;
+  height: 74rpx;
+}
+.div-list .div-list-item .div-date{
+  color: #777;
+  font-size:24rpx ;
+}
+
+.scroll-view_H{
+  white-space: nowrap;
+}
+
+.scroll-view-item_H{
+  display: inline-block;
+  width: 320rpx;
+  height: 320rpx;
+  margin-right: 34rpx;
+}
+
+.scroll-view-item_H image{
+  max-width: 340rpx;
+  max-height: 200rpx;
+  border-radius: 4rpx;
+}
+
+.scroll-view-item_H .bottom text{
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-line;
+  font-size: 24rpx;
+}
+
+.scroll-view-item_H .top{
+  position: relative;
+}
+.scroll-view-item_H .view-date{
+  position: absolute;
+  top:20rpx;
+  left:20rpx;
+  z-index: 10;
+  color: white;
+  background: #7777774d;
+  font-size: 24rpx;
+  padding: 0 8rpx;
+  border-radius: 4rpx;
+}
+
+.scroll-view-item_H .view-date .date-title{
+  background: #a94442;
+  border-radius: 3px;
+  padding: 1rpx 3rpx;
+  margin-right: 6rpx;
+}

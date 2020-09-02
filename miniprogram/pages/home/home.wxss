@@ -1,0 +1,83 @@
+/* pages/home/home.wxss */
+.home {
+  background-color: white;
+  height: 100vh;
+}
+
+.home-swiper swiper {
+  height: 105px;
+}
+
+.home-swiper .swiper-item {
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.home-top {
+  position: relative;
+}
+
+
+.home-search-input {
+  background-color: white;
+  opacity: 0.9;
+  padding: 24rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-search-input input {
+  flex: 1;
+}
+
+.home-search-input text {
+  color: #777;
+}
+
+.home-search-input text .text-map {
+  color: red;
+}
+
+.home-search-input {
+  padding: 22rpx;
+}
+
+.div-nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div-nav-list .nav-item {
+  flex: 0 0 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-nav-list {
+  padding: 48rpx 12rpx;
+}
+
+.div-nav-list .nav-item .item-bg {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background-color: rosybrown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 12rpx;
+}
+
+.div-nav-list .nav-item .item-bg text {
+  font-size: 64rpx;
+}
+
+.div-nav-list .nav-item .title {
+  font-size: 34rpx;
+}
