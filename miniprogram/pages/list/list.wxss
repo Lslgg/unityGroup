@@ -1,1 +1,70 @@
 /* pages/list/list.wxss */
+.list-page{
+  background-color: white;
+  padding: 0 28rpx;
+}
+
+.list-top {
+  position: relative;
+}
+
+.list-search-input {
+  background-color: #f8f8f8;
+  opacity: 0.9;
+  padding: 24rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2rpx;
+}
+
+.list-search-input input {
+  flex: 1;
+  padding-left: 12rpx;
+}
+
+.list-search-input text {
+  color: #777;
+}
+
+.list-search-input text .text-map {
+  color: red;
+}
+
+.list-search-input {
+  padding: 22rpx;
+}
+
+.list-img{
+  height: 280rpx;
+  margin-top: 12rpx;
+}
+
+.list-img image{
+  height: 280rpx;
+  width: 100%;
+}
+
+.list-select-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 18rpx 0;
+  font-size: 28rpx;
+  color: #333333;
+}
+
+.list-select-list .select-item .icon{
+  margin-left: 6rpx;
+  color: #ccc;
+}
+.list-select-list .tab-item{
+  background-color: #eee;
+  padding: 12rpx 14rpx;
+  border-radius: 4rpx;
+  font-size: 24rpx;
+}
+
+.list-page .div-row {
+  padding: 0;
+}

@@ -1,6 +1,76 @@
 <!--pages/home/home.wxml-->
-<view class="container">
-	<view class="list">
-		<text>{{motto}}</text>
+<view class="list-page">
+	<view class="list-top">
+		<view class="list-search">
+			<view class="list-search-input">
+				<text class="fa fa-search"></text>
+				<input class="weui-input" placeholder="输入区县，商圈，小区名称" />
+				<text>
+					<text class="fa fa-map-marker text-map"></text>
+					<text style="color:#777;font-size:34rpx"> 广州</text>
+				</text>
+			</view>
+		</view>
+		<view class="list-img">
+			<view class="imgBg">
+				<image src="../../assets/images/home/nav2.jpg" />
+			</view>
+		</view>
 	</view>
+	<view class="list-where-select">
+		<view class="list-select-list">
+			<view class="select-item" wx:for="{{['区域','均价','户型']}}"  wx:key="index">
+				<text class="title">{{item}}</text>
+				<text class="fa fa-caret-down icon"></text>
+			</view>
+		</view>
+		<view class="list-select-list">
+			<view class="select-item tab-item" wx:for="{{types}}" wx:key="index">
+				<text class="fa {{item.icon}} red" style="margin-right:6rpx"></text>
+				<text class="title">{{item.name}}</text>
+			</view>
+		</view>
+	</view>
+	<view class="content">
+		<scroll-view scroll-y="true">
+			<view class="div-row div-row-1">
+				<view class="title">
+					<text>楼盘推荐</text>
+				</view>
+				<view class="div-list">
+					<view class="div-list-item" wx:for="{{premises}}" wx:key="index">
+						<view class="left">
+							<view class="imgBg">
+								<image src="../../assets/images/home/{{item.imgSrc}}" />
+							</view>
+						</view>
+						<view class="right">
+							<view class="div-title">
+								<text>{{item.name}}</text>
+							</view>
+							<view class="price">
+								<text class="price-average red" style="margin-right:12rpx;">21000元/平</text>
+								<text class="price-total">总价:210万</text>
+							</view>
+							<view class="address">
+								<text>黄沙-知识城板块</text>
+							</view>
+							<view class="tags">
+								<text class="tag-item tag-item-active">在售</text>
+								<text class="tag-item">品牌地段</text>
+								<text class="tag-item">地铁沿线</text>
+							</view>
+						</view>
+					</view>
+				</view>
+				<view class="more" wx:if="{{isMore}}">
+					<text>正在加载...</text>
+				</view>
+				<view class="more" wx:else>
+					<text>我是有底线的</text>
+				</view>
+			</view>
+        </scroll-view>
+	</view>
+	
 </view>

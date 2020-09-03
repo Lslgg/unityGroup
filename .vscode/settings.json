@@ -8,5 +8,6 @@
         "**/node_modules": true,
         "**/typings": true,
         "**/*.js": true
-    }
+    },
+    "files.autoSave": "onFocusChange"
 }

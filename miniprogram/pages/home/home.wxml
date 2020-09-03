@@ -7,7 +7,7 @@
 				<input class="weui-input" placeholder="输入区县，商圈，小区名称" />
 				<text>
 					<text class="fa fa-map-marker text-map"></text>
-					<text style="color:#333"> 广州</text>
+					<text style="color:#777;font-seize:34rpx"> 广州</text>
 				</text>
 			</view>
 		</view>
