@@ -9,5 +9,5 @@
         "**/typings": true,
         "**/*.js": true
     },
-    "files.autoSave": "onFocusChange"
+    "files.autoSave": "off"
 }

@@ -1,0 +1,193 @@
+<!-- pages/detail/detail.wxml -->
+<view class="detail-page">
+    <view class="detail-top">
+        <view class="home-swiper">
+            <swiper indicator-dots="true" autoplay="true">
+                <block wx:for="{{background}}" wx:key="*this">
+                    <swiper-item>
+                        <view class="swiper-item {{item}}">
+                            <image src="../../assets/images/home/{{item}}" style="width:100%;height:380rpx"></image>
+                        </view>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+    </view>
+    <view class="content-padding-28">
+        <view class="detail-info">
+            <view class="title">
+                <text class="text-title">珠江花城</text>
+            </view>
+            <view class="tags">
+                <block wx:for="{{['在售','品牌地段','地铁沿线']}}" wx:key="index">
+                    <text class="tag-item {{index===0?'tag-item-active':''}}">{{item}}</text>
+                </block>
+            </view>
+            <view class="detail-price">
+                <view class="left">
+                    <text class="gray padding-right-14">均价</text>
+                    <text class="red">50000</text>
+                    <text>/元平方米</text>
+                </view>
+                <view class="right">
+                    <view class="calculator">
+                        <text class="fa fa-calculator" aria-hidden="true"></text>
+                        <span>房贷计算器</span>
+                    </view>
+                </view>
+            </view>
+            <view class="detail-open">
+                <view class="left">
+                    <text class="gray padding-right-14">开盘</text>
+                    <text>2020-12-12 20:20:20</text>
+                </view>
+            </view>
+            <view class="detail-address">
+                <view class="left">
+                    <text class="gray padding-right-14">地址</text>
+                    <text>黄沙大观路北 黄子地铁站旁</text>
+                </view>
+                <view class="right">
+                    <view class="calculator">
+                        <text class="fa fa-map-marker red" aria-hidden="true"></text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="more" style="margin:24rpx 0;">
+            <text>查看更多信息</text>
+        </view>
+    </view>
+    <view class="detail-statis-list content-padding-28">
+        <view class="statis-item">
+            <view class="span-icon">
+                <text class="fa fa-eye" aria-hidden="true"></text>
+            </view>
+            <text class="span-gray">浏览量:659</text>
+        </view>
+        <view class="statis-item">
+            <view class="span-icon">
+                <text class="fa fa-address-card" aria-hidden="true"></text>
+            </view>
+            <text class="span-gray">报备量:69</text>
+        </view>
+        <view class="statis-item">
+            <view class="span-icon">
+                <text class="fa fa-calendar-check-o" aria-hidden="true"></text>
+            </view>
+            <text class="span-gray">成交量:6</text>
+        </view>
+    </view>
+    <view class="div-row">
+        <view class="line"></view>
+    </view>
+    <view class="div-row">
+        <view class="title">
+            <text>优惠推荐</text>
+        </view>
+        <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+            <view class="scroll-view-item_H" wx:for="{{discounts}}" wx:key="index">
+                <view class="top">
+                    <view class="imgBg">
+                        <image src="../../assets/images/home/{{item.imgSrc}}" />
+                    </view>
+                    <view class="view-date">
+                        <text class="date-title">日期:</text>
+                        <text class="date">{{item.date}}</text>
+                    </view>
+                </view>
+                <view class="bottom">
+                    <text>{{item.title}}</text>
+                </view>
+            </view>
+        </scroll-view>
+        <view class="line"></view>
+    </view>
+    <view class="div-row row-room-type">
+        <view class="title">
+            <text>户型介绍(3)</text>
+            <view class="lookMore">
+                <text style="margin-right:6rpx">查看全部</text>
+                <text class="fa fa-angle-right"></text>
+            </view>
+        </view>
+        <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+            <view class="scroll-view-item_H room-type-item" wx:for="{{roomTypes}}" wx:key="index">
+                <view class="top detail-roomType-top">
+                    <view class="imgBg">
+                        <image src="../../assets/images/common/{{item.imgSrc}}" />
+                    </view>
+                    <text class="roomType-title">{{item.title}}</text>
+                </view>
+                <view class="bottom detail-roomType-bottom">
+                    <text class="roomType-acreage">{{item.acreage}}</text>
+                    <text class="roomType-price">{{item.price}}</text>
+                </view>
+            </view>
+        </scroll-view>
+        <view class="line"></view>
+    </view>
+    <view class="div-row detail-dynamic">
+        <view class="title">
+            <text>楼盘动态</text>
+            <view class="lookMore">
+                <text style="margin-right:6rpx">查看全部</text>
+                <text class="fa fa-angle-right"></text>
+            </view>
+        </view>
+        <view class="detail-dynamic-list">
+            <view class="dynamic-list-item" wx:for="{{[1,2,3,4]}}" wx:key="index">
+                <view class="list-name">沄蕃谷均价为：3500元/平方米</view>
+                <view class="int">
+                    <text class="tag">楼盘动态</text>
+                    <text class="time">2020-08-03</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="div-row">
+        <view class="more">
+            <text>订阅动态</text>
+        </view>
+    </view>
+    <view class="div-row">
+        <view class="title">项目位置</view>
+        <view class="view-map">
+            <map id="map" scale="10" show-location style="width: 100%; height: 300rpx;"></map>
+        </view>
+    </view>
+    <cover-view class="bottom-nav">
+        <cover-view class="nav-content">
+            <cover-view class="nav-item">
+                <cover-view class="cover-img">
+                    <cover-view class="fa fa-street-view"></cover-view>
+                    <cover-view class="nav-name">全景</cover-view>
+                </cover-view>
+            </cover-view>
+            <cover-view class="nav-item">
+                <cover-view class="cover-img">
+                    <cover-view class="fa fa-star"></cover-view>
+                    <cover-view class="nav-name">收藏</cover-view>
+               </cover-view>
+            </cover-view>
+            <cover-view class="nav-item">
+                <cover-view class="cover-btn cover-btn-orange">
+                    <cover-view class="top">
+                        <cover-view class="fa fa-phone"></cover-view>
+                        <cover-view>一键咨询</cover-view>
+                    </cover-view>
+                    <cover-view>至电了解更多信息</cover-view>
+                </cover-view>
+            </cover-view>
+            <cover-view class="nav-item">
+                <cover-view class="cover-btn cover-btn-red">
+                    <cover-view class="top">
+                        <cover-view class="fa fa-address-card-o" ></cover-view>
+                        <cover-view>一键报备</cover-view>
+                    </cover-view>
+                    <cover-view>报备想了解的信息</cover-view>
+                </cover-view>
+            </cover-view>
+        </cover-view>
+    </cover-view>
+</view>

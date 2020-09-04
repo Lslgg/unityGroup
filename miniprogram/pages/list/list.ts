@@ -70,9 +70,9 @@ Page({
    */
   onReachBottom() {
     console.log(this);
-    // this.setData({
-    //   premises: this.data.premises.concat(this.data.premises)
-    // })
+    this.setData({
+      premises: this.data.premises.concat(this.data.premises)
+    })
   },
 
   /**

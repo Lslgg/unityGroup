@@ -1,0 +1,109 @@
+/* pages/detail/detail.wxss */
+.detail-page{
+    padding-bottom: 188rpx;
+}
+.detail-info .title{
+    padding: 24rpx 0;
+    font-size: 34rpx;
+    font-weight: bold;
+}
+
+.detail-info  .detail-price{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24rpx;
+    margin: 24rpx 0;
+}
+
+.detail-address{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24rpx;
+    margin-top: 24rpx;
+}
+
+.detail-page .detail-open{
+    font-size: 24rpx;
+}
+
+.detail-statis-list{
+    display: flex;
+    justify-content: space-around;
+    padding: 12rpx 0;
+}
+
+.detail-statis-list .statis-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.detail-statis-list .span-gray{
+    font-size: 22rpx;
+    color: gray;
+    margin-top: 12rpx;
+}
+
+.detail-statis-list .span-icon{
+    width: 54rpx;
+    height: 54rpx;
+    background-color: #f5d9de;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.row-room-type .room-type-item{
+    border: solid 1px #f8f8f8;
+}
+
+.row-room-type .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row-room-type .title .lookMore{
+    font-size: 22rpx;
+}
+.row-room-type .bottom{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+}
+.detail-roomType-top .roomType-title{
+    font-weight: bold;
+    font-size: 28rpx;
+    padding-left: 14rpx;
+}
+.detail-roomType-bottom{
+    padding-left: 14rpx;
+}
+.detail-roomType-bottom .roomType-acreage{
+    font-size: 18rpx;
+    color: #999;
+}
+.detail-roomType-bottom .roomType-price{
+    font-size: 20rpx;
+}
+.detail-dynamic .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.detail-dynamic .title .lookMore{
+    font-size: 22rpx;
+}
+.detail-dynamic-list .list-name{
+    font-size: 26rpx;
+}
+.detail-dynamic-list .int{
+    font-size: 22rpx;
+    color: #999;
+}
+.detail-dynamic-list .dynamic-list-item{
+    margin-bottom: 18rpx;
+}

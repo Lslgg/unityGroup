@@ -76,10 +76,10 @@
 							<text>黄沙-知识城板块</text>
 						</view>
 						<view class="tags">
-							<text class="tag-item tag-item-active">在售</text>
-							<text class="tag-item">品牌地段</text>
-							<text class="tag-item">地铁沿线</text>
-						</view>
+							<block wx:for="{{['在售','品牌地段','地铁沿线']}}" wx:key="index">
+								<text class="tag-item {{index===0?'tag-item-active':''}}" >{{item}}</text>
+							</block>
+						</view> 
 					</view>
 				</view>
 			</view>
