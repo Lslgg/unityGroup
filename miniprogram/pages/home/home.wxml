@@ -7,7 +7,7 @@
 				<input class="weui-input" placeholder="输入区县，商圈，小区名称" />
 				<text>
 					<text class="fa fa-map-marker text-map"></text>
-					<text style="color:#777;font-seize:34rpx"> 广州</text>
+				<text style="color:#777;font-seize:34rpx"> 广州</text>
 				</text>
 			</view>
 		</view>
@@ -58,7 +58,7 @@
 				<text>楼盘推荐</text>
 			</view>
 			<view class="div-list">
-				<view class="div-list-item" wx:for="{{premises}}" wx:key="index">
+				<navigator class="div-list-item" wx:for="{{premises}}" wx:key="index" url="/pages/detail/detail">
 					<view class="left">
 						<view class="imgBg">
 							<image src="../../assets/images/home/{{item.imgSrc}}" />
@@ -79,9 +79,9 @@
 							<block wx:for="{{['在售','品牌地段','地铁沿线']}}" wx:key="index">
 								<text class="tag-item {{index===0?'tag-item-active':''}}" >{{item}}</text>
 							</block>
-						</view> 
+						</view>
 					</view>
-				</view>
+				</navigator>
 			</view>
 			<view class="more">
 				<text class="text-more">更多项目...</text>

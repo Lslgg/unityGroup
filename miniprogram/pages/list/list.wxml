@@ -5,9 +5,9 @@
 			<view class="list-search-input">
 				<text class="fa fa-search"></text>
 				<input class="weui-input" placeholder="输入区县，商圈，小区名称" />
-				<text>
-					<text class="fa fa-map-marker text-map"></text>
-					<text style="color:#777;font-size:34rpx"> 广州</text>
+				<text class="input-right">
+					<text  class="fa fa-map"></text>
+				<text  style="font-size:25rpx;margin-left:4rpx;">地图找房</text>
 				</text>
 			</view>
 		</view>
@@ -19,9 +19,11 @@
 	</view>
 	<view class="list-where-select">
 		<view class="list-select-list">
-			<view class="select-item" wx:for="{{['区域','均价','户型']}}"  wx:key="index">
-				<text class="title">{{item}}</text>
-				<text class="fa fa-caret-down icon"></text>
+			<view class="select-item" wx:for="{{['区域','均价','户型']}}" wx:for-index="selectIndex" wx:key="selectIndex">
+				<picker value="{{index}}" range="{{array[selectIndex]}}">
+					<text class="title">{{item}}</text>
+					<text class="fa fa-caret-down icon"></text>
+				</picker>
 			</view>
 		</view>
 		<view class="list-select-list">
@@ -70,7 +72,13 @@
 					<text>我是有底线的</text>
 				</view>
 			</view>
-        </scroll-view>
+		</scroll-view>
 	</view>
-	
+	<view class="section">
+		<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+			<view class="picker">
+				当前选择：{{array[index]}}
+			</view>
+		</picker>
+	</view>
 </view>

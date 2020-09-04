@@ -5,6 +5,7 @@ Page({
    */
   data: {
     motto: 'List Page',
+    array: [['广州', '佛山', '长春', '大连'], ['1万-2万', '2万-3万'], ['1万-2万', '2万-3万'], ['户型1', '户型12', '户型13']],
     types: [
       { name: '直播看房', icon: 'fa-television' },
       { name: '近期开盘', icon: 'fa-ils' },
@@ -70,9 +71,9 @@ Page({
    */
   onReachBottom() {
     console.log(this);
-    this.setData({
-      premises: this.data.premises.concat(this.data.premises)
-    })
+    // this.setData({
+    //   premises: this.data.premises.concat(this.data.premises)
+    // })
   },
 
   /**

@@ -11,7 +11,7 @@
 .list-search-input {
   background-color: #f8f8f8;
   opacity: 0.9;
-  padding: 24rpx;
+  padding:20rpx 24rpx;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,16 +23,13 @@
   padding-left: 12rpx;
 }
 
-.list-search-input text {
-  color: #777;
-}
-
 .list-search-input text .text-map {
   color: red;
 }
 
-.list-search-input {
-  padding: 22rpx;
+.list-search-input .input-right{
+  flex: 0 0 150rpx;
+  color: rosybrown;
 }
 
 .list-img{

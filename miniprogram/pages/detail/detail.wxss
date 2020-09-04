@@ -107,3 +107,9 @@
 .detail-dynamic-list .dynamic-list-item{
     margin-bottom: 18rpx;
 }
+
+.detail-page .dowload{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 28rpx;
+}
