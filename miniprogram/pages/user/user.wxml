@@ -1,5 +1,105 @@
-<view class="container">
-	<view class="user">
-		<text>{{motto}}</text>
+<view class="user-page">
+	<view class="user-info">
+		<view class="left">
+			<image src="../../assets/images/common/user-portrait.jpg" />
+			<view class="info-phone-name">
+				<text>那年夏天的风</text>
+				<text class="text-phone">电话:13710844593</text>
+			</view>
+		</view>
+		<view class="right">
+			<text class="fa fa-desktop"></text>
+			<text style="margin-left:12rpx">工作台</text>
+		</view>
+	</view>
+	<view class="user-nav-list">
+		<view class="user-nav-item">
+			<view class="left">
+				<text class="fa fa-heart-o"></text>
+				<text>收藏项目</text>
+			</view>
+			<view class="right">
+				<text class="fa fa-angle-right"></text>
+			</view>
+		</view>
+		<view class="user-nav-item">
+			<view class="left">
+				<text class="fa fa-address-card"></text>
+				<text>我的报备</text>
+			</view>
+			<view class="right">
+				<text class="fa fa-angle-right"></text>
+			</view>
+		</view>
+		<view class="user-nav-item">
+			<view class="left">
+				<text class="fa fa-address-book"></text>
+				<text>个人信息</text>
+			</view>
+			<view class="right">
+				<text class="fa fa-angle-right"></text>
+			</view>
+		</view>
+	</view>
+	<view class="user-nav-list">
+		<view class="user-nav-item">
+			<view class="left">
+				<text class="fa fa-briefcase"></text>
+				<text>业务员</text>
+			</view>
+			<view class="right">
+				<text class="fa fa-angle-right"></text>
+			</view>
+		</view>
+		<view class="user-nav-item">
+			<view class="left">
+				<text class="fa fa-sitemap"></text>
+				<text>最新代理代表</text>
+			</view>
+			<view class="right">
+				<text class="fa fa-angle-right"></text>
+			</view>
+		</view>
+		<view class="user-nav-item">
+			<view class="left">
+				<text class="fa fa-question-circle"></text>
+				<text>关于我们</text>
+			</view>
+			<view class="right">
+				<text class="fa fa-angle-right"></text>
+			</view>
+		</view>
+	</view>
+	<view class="user-nav-list">
+		<view class="user-nav-item">
+			<view class="left">
+				<text class="fa fa-phone-square"></text>
+				<text>客服电话</text>
+			</view>
+			<view class="right">
+				<text class="fa fa-angle-right"></text>
+			</view>
+		</view>
+		<view class="user-nav-item">
+			<view class="left">
+				<text class="fa fa-registered"></text>
+				<text>业务员注册</text>
+			</view>
+			<view class="right">
+				<text class="fa fa-angle-right"></text>
+			</view>
+		</view>
+		<view class="user-nav-item">
+			<view class="left">
+				<text class="fa fa-hacker-news"></text>
+				<text>检查最新版本</text>
+			</view>
+			<view class="right">
+				<text class="fa fa-angle-right"></text>
+			</view>
+		</view>
+	</view>
+	<view class="more" style="background:white;margin-top:24rpx">
+		<text>清除缓存</text>
 	</view>
 </view>

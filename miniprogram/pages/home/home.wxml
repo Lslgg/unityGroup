@@ -16,7 +16,7 @@
 				<block wx:for="{{background}}" wx:key="*this">
 					<swiper-item>
 						<view class="swiper-item {{item}}">
-							<image src="../../assets/images/home/{{item}}" mode="widthFix"></image>
+							<image class="swiper-image" src="../../assets/images/home/{{item}}"></image>
 						</view>
 					</swiper-item>
 				</block>

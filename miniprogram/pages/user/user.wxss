@@ -1,1 +1,61 @@
 /* pages/user/user.wxss */
+.user-page {
+    padding-bottom: 48rpx;
+    background-color: #f8f8f8;
+}
+.user-page>.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32rpx 28rpx;
+    background-color: white;
+}
+.user-page>.user-info>.left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-page>.user-info>.right{
+    font-size: 28rpx;
+    color: #337ab7;
+}
+.user-page>.user-info .info-phone-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.user-page>.user-info .info-phone-name .text-phone{
+    font-size: 26rpx;
+    color: #888;
+}
+.user-page .user-info image {
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 50%;
+    margin-right: 18rpx;
+}
+.user-page .user-nav-list{
+    margin-top: 24rpx;
+    background-color: white;
+    padding: 0 28rpx;
+}
+.user-page .user-nav-list .user-nav-item{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24rpx 0;
+    border-bottom: solid 1px #f8f8f8;
+}
+.user-page .user-nav-list .user-nav-item >.left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.user-page .user-nav-list .user-nav-item >.left .fa{
+    margin-right: 12rpx;
+}
+.user-page .user-nav-list .user-nav-item >.right .fa{
+    color: #888;
+    font-weight: bold;
+}

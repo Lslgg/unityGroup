@@ -5,12 +5,17 @@
 }
 
 .home-swiper swiper {
-  height: 105px;
+  height: 350rpx;
 }
 
 .home-swiper .swiper-item {
   text-align: center;
   background-color: #f8f8f8;
+}
+
+.home-swiper .swiper-item .swiper-image{
+  height: 350rpx;
+  width: 100%;
 }
 
 .home-top {
