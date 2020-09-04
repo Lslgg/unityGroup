@@ -1,5 +1,5 @@
 <!-- pages/detail/detail.wxml -->
-<view class="detail-page">
+<view class="detail-page" id="detail-page">
 	<view class="detail-top">
 		<view class="detail-swiper">
 			<swiper indicator-dots="true" autoplay="true" style="height:380rpx">
@@ -156,7 +156,7 @@
 		</view>
 	</view>
 	<view class="div-row">
-		<view class="more">
+		<view class="more" bindtap="onSubject">
 			<text>订阅动态</text>
 		</view>
 	</view>
@@ -198,6 +198,14 @@
 					<cover-view>报备想了解的信息</cover-view>
 				</cover-view>
 			</cover-view>
+		</cover-view>
+	</cover-view>
+	<cover-view bindtap="onHidePopWindow" wx:if="{{isPopWindow}}" class="pop-window-bg" style="z-index:1000;height:{{popWindowHeight}}px">
+	</cover-view>
+	<cover-view style="top:{{scrollTop+100}}px;" class="pop-window" wx:if="{{isPopWindow}}">
+		<cover-view class="pop-window-content">
+			<cover-view class="red" style="font-size:24rpx;">扫码关注公众号,订阅消息通知</cover-view>
+			<cover-image style="width:200rpx;height:200rpx;margin:auto;" src="../../assets/images/common/code.jpg"></cover-image>
 		</cover-view>
 	</cover-view>
 </view>

@@ -21,30 +21,25 @@
     font-size: 24rpx;
     margin-top: 24rpx;
 }
-
 .detail-page .detail-open{
     font-size: 24rpx;
 }
-
 .detail-statis-list{
     display: flex;
     justify-content: space-around;
     padding: 12rpx 0;
 }
-
 .detail-statis-list .statis-item{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
 .detail-statis-list .span-gray{
     font-size: 22rpx;
     color: gray;
     margin-top: 12rpx;
 }
-
 .detail-statis-list .span-icon{
     width: 54rpx;
     height: 54rpx;
@@ -55,11 +50,9 @@
     align-items: center;
     border-radius: 50%;
 }
-
 .row-room-type .room-type-item{
     border: solid 1px #f8f8f8;
 }
-
 .row-room-type .title{
     display: flex;
     justify-content: space-between;
@@ -107,7 +100,6 @@
 .detail-dynamic-list .dynamic-list-item{
     margin-bottom: 18rpx;
 }
-
 .detail-page .dowload{
     display: flex;
     justify-content: flex-start;

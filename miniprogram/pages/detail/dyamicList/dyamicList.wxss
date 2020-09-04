@@ -1,0 +1,79 @@
+/* pages/detail/dyamicList/dyamicList.wxss */
+.dyamic-list {
+  padding: 0 48rpx;
+}
+
+.dt-new .h3 {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.dt-new .h3 i {
+  color: #83868f;
+}
+
+.dt-new .dt_newList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.dt-new .li {
+  position: relative;
+  border-left: 1px solid #fc6363;
+  margin-left: 3px;
+  padding-left: 16px;
+  padding-bottom: 20px;
+  padding-top: 4px;
+}
+
+.dt-new .li:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+}
+
+.dt-new .li:after {
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: 2px;
+  width: 6px;
+  height: 6px;
+  background: #fc6363;
+  border-radius: 50%;
+}
+
+.dt-new view .time {
+  font-size: 13px;
+  line-height: 16px;
+  color: #83868f;
+  margin-top: -7px;
+}
+
+.dt-new view .rtxt {
+  font-size: 15px;
+  color: #3c3f46;
+  margin-top: 6px;
+}
+
+.dt-new view .rtxt .h4 {
+  font-size: 15px;
+  color: #3c3f46;
+  line-height: 27px;
+}
+
+.dt-new .li .rtxt text {
+  font-size: 14px;
+  color: #999d9e;
+  line-height: 22px;
+  margin-top: 2px;
+  max-height: 44px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

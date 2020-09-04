@@ -1,0 +1,75 @@
+<!--pages/detail/dyamicList/dyamicList.wxml-->
+<view class="dyamic-list">
+	<view class="list">
+		<view class="dt-new">
+			<view class="title h3" style="margin-top: 0;">
+				<text class="fa fa-bars"></text>
+				<span> 动态列表</span>
+			</view>
+			<view class="dt_newList" style="word-wrap: break-word;">
+				<view class="li">
+					<view class="time">2020-08-24 14:25:10</view>
+					<view class="rtxt">
+						<view class="h4"> 华标·峰湖御境在售洋房和院子产品</view>
+						<text>华标·峰湖御境位于广州市黄埔科学城,由广东华标创业集团有限公司建成...。</text>
+					</view>
+				</view>
+				<view class="li">
+					<view class="time">2020-08-07 15:44:07</view>
+					<view class="rtxt">
+						<view class="h4">华标·峰湖御境均价50000元/㎡</view>
+						<text>华标·峰湖御境，坐标科学城中心，项目总占地面积约600多亩，总建筑面积约80万平方米...</text>
+					</view>
+				</view>
+				<view class="li">
+					<view class="time">2020-07-21 15:11:54</view>
+					<view class="rtxt">
+						<view class="h4">华标峰湖御境推出328-586㎡</view>
+						<text>华标峰湖御境现楼交付的有在售建面为360-530㎡院子产品,毛坯交付,总价约1800万/套起...</text>
+					</view>
+				</view>
+				<view class="li">
+					<view class="time">2020-07-10 12:21:57</view>
+					<view class="rtxt">
+						<view class="h4">华标峰湖御境均价50000元/㎡</view>
+						<text>华标峰湖御境位于广州市黄埔科学城，由广东华标创业集团有限公司建成...</text>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<cover-view class="bottom-nav">
+		<cover-view class="nav-content">
+			<cover-view class="nav-item">
+				<cover-view class="cover-img">
+					<cover-view class="fa fa-street-view"></cover-view>
+					<cover-view class="nav-name">全景</cover-view>
+				</cover-view>
+			</cover-view>
+			<cover-view class="nav-item">
+				<cover-view class="cover-img">
+					<cover-view class="fa fa-star"></cover-view>
+					<cover-view class="nav-name">收藏</cover-view>
+				</cover-view>
+			</cover-view>
+			<cover-view class="nav-item">
+				<cover-view class="cover-btn cover-btn-orange">
+					<cover-view class="top">
+						<cover-view class="fa fa-phone"></cover-view>
+						<cover-view>一键咨询</cover-view>
+					</cover-view>
+					<cover-view>至电了解更多信息</cover-view>
+				</cover-view>
+			</cover-view>
+			<cover-view class="nav-item">
+				<cover-view class="cover-btn cover-btn-red">
+					<cover-view class="top">
+						<cover-view class="fa fa-address-card-o"></cover-view>
+						<cover-view>一键报备</cover-view>
+					</cover-view>
+					<cover-view>报备想了解的信息</cover-view>
+				</cover-view>
+			</cover-view>
+		</cover-view>
+	</cover-view>
+</view>

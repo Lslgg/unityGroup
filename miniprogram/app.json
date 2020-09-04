@@ -2,13 +2,14 @@
   "pages": [
     "pages/home/home",
     "pages/detail/detail",
+    "pages/detail/dyamicList/dyamicList",
     "pages/list/list",
     "pages/user/user",
     "pages/index/index",
     "pages/logs/logs"
   ],
   "tabBar": {
-    "selectedColor":"#1296db",
+    "selectedColor": "#1296db",
     "list": [
       {
         "pagePath": "pages/home/home",
